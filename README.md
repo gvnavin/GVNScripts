@@ -4,5 +4,6 @@ The shortcut will be mostly the starting letter of each word eg: gst means git s
 After pulling this package, set GVN_SCRIPTS_PATH variable in bash_profile or bashrc file.
 Source the source file inside the rc folder.
 
-export GVN_SCRIPTS_PATH='/Users/user/GVN_SCRIPTS_PATH/src/GVNScripts/'
+export GVN_SCRIPTS_PATH='~/GVNScripts/'
+
 source $GVN_SCRIPTS_PATH/rc/source
