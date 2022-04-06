@@ -1,0 +1,11 @@
+alias adbrt='adb reverse tcp:8081 tcp:8081'
+
+alias rnd='adb shell input keyevent 82'
+alias rr='adb shell input text "RR"'
+
+alias adbst='adb shell am force-stop'
+
+alias adbi='adb install -r android-app.apk'
+
+alias emul='/Users/gnavin/bin/Android/sdk/emulator/emulator -avd Nexus_6_API_25'
+alias emul='./emulator -avd Nexus5'

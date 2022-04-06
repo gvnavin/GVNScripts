@@ -1,0 +1,124 @@
+###########################################################################
+#git
+
+alias gg='git gui &'
+alias gk='gitk'
+alias gst='git status'
+alias gsh='git show'
+alias gd='git diff'
+alias gdc='git diff --cached'
+
+#git log
+alias gl='git log'
+alias glo='git log --pretty=oneline'
+
+function gln {
+	git log --pretty=oneline -$1
+}
+
+alias glp='git log -p'
+alias gls='git log --stat'
+
+alias gbl='git blame'
+
+#git rebase
+alias grc='git rebase --continue'
+alias gplr='git pull --rebase'
+
+function gri {
+	git rebase -i HEAD~$1
+}
+
+alias agplr='/apollo/env/SDETools/bin/git pull --rebase'
+
+
+alias grh='git reset HEAD~1'
+alias grhH='git reset --hard HEAD'
+
+alias gcfdx='git clean -fdx'
+
+#https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
+alias gcfd='git clean -f -d'
+
+alias gcm='git commit -m'
+alias gcmt='git commit -m "temp"'
+alias gca='git commit --amend'
+alias gcane='git commit --amend --no-edit'
+
+alias gcp='git cherry-pick'
+alias gcpc='git cherry-pick --continue'
+
+#git push origin branch-name
+alias gpo='git push origin'
+
+#git push to mainline
+alias gpoml='git push origin mainline'
+
+alias gpopt='git push origin prototype'
+
+alias gpomt='git push origin master'
+
+alias gcod='git checkout development'
+alias gcol='git checkout ll'
+
+
+#if you give branch it will check the given branch or if you give commit id, it will sync upto the given commit id
+alias gco='git checkout'
+alias gcoml='git checkout mainline'
+alias gcomt='git checkout master'
+
+alias ga.='git add .'	# stages new and modified, without deleted
+alias gau='git add -u'	# u = update - stages modified and deleted, without new
+alias gaa='git add -A'  # stages All
+alias gap='git add -p'  # patch, stage change interactively
+alias gad='git add'
+
+#creates a new branch
+alias gcob='git checkout -b'
+
+#create a new branch from mainline as base
+function gcobm {
+	git checkout -b $1 mainline
+}
+
+#deletes branch
+alias gbd='git branch -d'
+alias gbD='git branch -D'
+#https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-both-locally-and-remotely
+#git push origin --delete <remote branch>
+
+#show the branches checked out/present in the dev desktop 
+alias gb='git branch'
+
+#shows all the branch including the branches from server
+alias gba='git branch -a'
+
+#rename branch oldBranch newBranch
+alias gbm='git branch -m'
+
+git config --global core.editor "subl -w"
+
+function gacmt {
+	ga.; 
+	gcmt;
+}
+
+function gacmtr {
+	ga.; 
+	gcmt;
+	git rebase -i HEAD~$1;
+}
+
+alias gii='gi osx > .gitignore; gi java >> .gitignore; gi intellij >> .gitignore'
+
+################################################################
+
+#to push into new branch
+#git push --set-upstream origin new_branch
+alias gpuo='git push --set-upstream origin'
+
+alias gsh='git stash'
+alias gsha='git stash apply'
+alias gshp='git stash pop'
+
+alias grv='git remote -v'

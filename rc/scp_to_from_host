@@ -1,0 +1,7 @@
+function s2cd {
+	scp -r $1 <host>:<path>.
+}
+
+function sfcd {
+	scp -r <host>:$1 .
+}

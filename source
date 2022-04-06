@@ -1,0 +1,24 @@
+#This line should be in bash_profile or bashrc
+#export GVN_SCRIPTS_PATH='/Users/gnavin/GVNScripts/'
+#source $GVN_SCRIPTS_PATH/source
+
+source $GVN_SCRIPTS_PATH/rc/adb_rc
+source $GVN_SCRIPTS_PATH/rc/autojump_rc
+source $GVN_SCRIPTS_PATH/rc/chrome_rc
+source $GVN_SCRIPTS_PATH/rc/git_rc
+source $GVN_SCRIPTS_PATH/rc/gradle_rc
+source $GVN_SCRIPTS_PATH/rc/gvn_rc
+source $GVN_SCRIPTS_PATH/rc/kerberos_rc
+source $GVN_SCRIPTS_PATH/rc/lombok_rc
+source $GVN_SCRIPTS_PATH/rc/mvn_rc
+source $GVN_SCRIPTS_PATH/rc/oh_my_zsh_rc
+source $GVN_SCRIPTS_PATH/rc/proj_rc
+source $GVN_SCRIPTS_PATH/rc/scp_to_from_host
+source $GVN_SCRIPTS_PATH/rc/ssh_to_host
+
+
+source $GVN_SCRIPTS_PATH/constants_variables
+source $GVN_SCRIPTS_PATH/path/path
+
+source $GVN_SCRIPTS_PATH/rc/ssh_to_host
+source $GVN_SCRIPTS_PATH/rc/scp_to_from_host

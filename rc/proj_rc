@@ -1,0 +1,5 @@
+alias nstuln='netstat -tuln | grep 3050'
+
+alias uni='unison code.prf'
+
+alias odt='ssh -L 2009:localhost:2009 <host> -f -N'

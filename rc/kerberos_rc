@@ -1,0 +1,3 @@
+#kinit
+alias ktf='/usr/kerberos/bin/kinit -f'
+alias ktfld='/usr/kerberos/bin/kinit -f -l 1000d'

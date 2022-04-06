@@ -1,0 +1,3 @@
+alias chr="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security --user-data-dir=/Users/gnavin/temp_chrome_user_data_dir"
+alias chrc="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --disable-web-security --user-data-dir=/Users/gnavin/temp_chrome_user_data_dir"
+alias chrb="/Applications/Google\ Chrome\ Beta.app/Contents/MacOS/Google\ Chrome\ Beta --disable-web-security --ignore-certificate-errors --ignore-urlfetcher-cert-requests --user-data-dir=/Users/gnavin/temp_chrome_user_data_dir"

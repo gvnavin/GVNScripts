@@ -1,0 +1,11 @@
+alias pshs='sudo python -m SimpleHTTPServer'
+
+export EDITOR=subl
+
+#export PS1='\h:\w $ '
+
+alias nh='open .'
+alias sprof='source ~/.bash_profile'
+alias szrc='source ~/.zshrc'
+
+alias notifyDone='terminal-notifier -title "Terminal" -message "Done with task! Exit status: $?"' -activate com.apple.Terminal
