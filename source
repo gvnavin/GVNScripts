@@ -1,5 +1,5 @@
 #This line should be in bash_profile or bashrc
-#export GVN_SCRIPTS_PATH='/Users/gnavin/GVNScripts/'
+#export GVN_SCRIPTS_PATH='<Path>/GVNScripts/'
 #source $GVN_SCRIPTS_PATH/source
 
 source $GVN_SCRIPTS_PATH/rc/adb_rc
@@ -19,6 +19,3 @@ source $GVN_SCRIPTS_PATH/rc/ssh_to_host
 
 source $GVN_SCRIPTS_PATH/constants_variables
 source $GVN_SCRIPTS_PATH/path/path
-
-source $GVN_SCRIPTS_PATH/rc/ssh_to_host
-source $GVN_SCRIPTS_PATH/rc/scp_to_from_host
