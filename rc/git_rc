@@ -48,6 +48,8 @@ alias gcane='git commit --amend --no-edit'
 alias gcp='git cherry-pick'
 alias gcpc='git cherry-pick --continue'
 
+alias gph='git push'
+
 #git push origin branch-name
 alias gpo='git push origin'
 
