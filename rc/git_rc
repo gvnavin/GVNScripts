@@ -66,6 +66,7 @@ alias gcol='git checkout ll'
 
 #if you give branch it will check the given branch or if you give commit id, it will sync upto the given commit id
 alias gco='git checkout'
+alias gcom='git checkout main'
 alias gcoml='git checkout mainline'
 alias gcomt='git checkout master'
 
@@ -86,6 +87,7 @@ function gcobm {
 #deletes branch
 alias gbd='git branch -d'
 alias gbD='git branch -D'
+
 #https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-both-locally-and-remotely
 #git push origin --delete <remote branch>
 
