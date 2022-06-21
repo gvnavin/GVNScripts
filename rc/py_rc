@@ -1,3 +1,5 @@
+alias pti='poetry install'
 alias pta='poetry add'
 alias ptu='poetry update'
 alias pyt='poetry run pytest'
+alias pyts='poetry run pytest -s'
