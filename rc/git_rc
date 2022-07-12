@@ -126,3 +126,9 @@ alias gsha='git stash apply'
 alias gshp='git stash pop'
 
 alias grv='git remote -v'
+
+function gacp {
+	ga.;
+	gcmt;
+	gph
+}

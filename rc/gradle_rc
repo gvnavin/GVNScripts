@@ -3,3 +3,7 @@ alias gfbi='gradle format && gradle build && gradle install'
 alias gf='gradle format -b build_gradle.gradle && gradle build -b build_gradle.gradle && gradle install -b build_gradle.gradle'
 
 alias brcgf='brc "gradle format -b build_gradle.gradle && gradle build -b build_gradle.gradle && gradle install -b build_gradle.gradle"'
+
+
+alias gwb='./gradlew build'
+alias gwrd='./gradlew assemble  --refresh-dependencies'
