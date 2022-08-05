@@ -48,17 +48,27 @@ alias gcane='git commit --amend --no-edit'
 alias gcp='git cherry-pick'
 alias gcpc='git cherry-pick --continue'
 
+###########################################################################
+
 alias gph='git push'
 
 #git push origin branch-name
 alias gpo='git push origin'
 
 #git push to mainline
-alias gpoml='git push origin mainline'
+alias gpml='git push origin mainline'
 
-alias gpopt='git push origin prototype'
+alias gppt='git push origin prototype'
 
-alias gpomt='git push origin master'
+alias gpmt='git push origin master'
+
+#to push into new branch
+#git push --set-upstream origin new_branch
+alias gpu='git push --set-upstream origin'
+
+alias gpumt='git push --set-upstream origin master'
+
+###########################################################################
 
 alias gcod='git checkout development'
 alias gcol='git checkout ll'
@@ -117,9 +127,6 @@ alias gii='gi osx > .gitignore; gi java >> .gitignore; gi intellij >> .gitignore
 
 ################################################################
 
-#to push into new branch
-#git push --set-upstream origin new_branch
-alias gpuo='git push --set-upstream origin'
 
 alias gsh='git stash'
 alias gsha='git stash apply'
