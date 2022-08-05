@@ -11,6 +11,7 @@ alias gdc='git diff --cached'
 #git log
 alias gl='git log'
 alias glo='git log --pretty=oneline'
+alias gl5='git log --pretty=oneline -5'
 
 function gln {
 	git log --pretty=oneline -$1
