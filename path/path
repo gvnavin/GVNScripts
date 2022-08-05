@@ -1,35 +1,41 @@
 
+#for ubuntu
+export HOME_DIR=/home/navin/
 
-export PATH=/Users/navin.gv/.nvm/versions/node/v17.3.0/bin:/Users/navin.gv/.poetry/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Java/JavaVirtualMachines/jdk-18.jdk/Contents/Home/bin:/Users/navin.gv/tools/apache-maven-3.8.5/bin
+#for mac
+#export HOME_DIR=$HOME_DIR/
+
+export PATH=$HOME_DIR/.nvm/versions/node/v17.3.0/bin:$HOME_DIR/.poetry/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Java/JavaVirtualMachines/jdk-18.jdk/Contents/Home/bin:$HOME_DIR/tools/apache-maven-3.8.5/bin
 
 export PATH=/bin/:$PATH
 export PATH=/sbin/:$PATH
 export PATH=/usr/sbin/:$PATH
 export PATH=/usr/bin/:$PATH
 export PATH=/usr/local/bin/:$PATH
+export PATH=/snap/bin/:$PATH
 export PATH=/usr/local/git/bin/:$PATH
 export PATH=/usr/local/opt/fswatch/bin:$PATH
 export PATH=$JAVA_HOME/:$PATH
-export PATH=/Users/navin.gv//Library/Android/sdk/:$PATH
-export PATH=/Users/navin.gv//Library/Android/sdk/tools/:$PATH
-export PATH=/Users/navin.gv//Library/Android/sdk/platform-tools/:$PATH
-export PATH=/Users/navin.gv//bin/android-sdk-macosx/:$PATH
-export PATH=/Users/navin.gv//bin/android-sdk-macosx/tools/:$PATH
-export PATH=/Users/navin.gv//bin/android-sdk-macosx/platform-tools/:$PATH
-export PATH=/Users/navin.gv//bin/gradle-2.12/bin/:$PATH
-export PATH=/Users/navin.gv//bin/aspectj1.8/bin/:$PATH
+export PATH=$HOME_DIR/Library/Android/sdk/:$PATH
+export PATH=$HOME_DIR/Library/Android/sdk/tools/:$PATH
+export PATH=$HOME_DIR/Library/Android/sdk/platform-tools/:$PATH
+export PATH=$HOME_DIR/bin/android-sdk-macosx/:$PATH
+export PATH=$HOME_DIR/bin/android-sdk-macosx/tools/:$PATH
+export PATH=$HOME_DIR/bin/android-sdk-macosx/platform-tools/:$PATH
+export PATH=$HOME_DIR/bin/gradle-2.12/bin/:$PATH
+export PATH=$HOME_DIR/bin/aspectj1.8/bin/:$PATH
 export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/:$PATH
-export PATH=/Users/navin.gv//.rubies/ruby-2.3.1/bin:$PATH
-export PATH=/Users/navin.gv//bin/:$PATH
+export PATH=$HOME_DIR/.rubies/ruby-2.3.1/bin:$PATH
+export PATH=$HOME_DIR/bin/:$PATH
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
-export PATH=/Users/navin.gv//bin/nodejs/nodejs-8/bin:$PATH
+export PATH=$HOME_DIR/bin/nodejs/nodejs-8/bin:$PATH
 export PATH=/usr/local/Cellar/node/6.3.0/libexec/npm/bin:$PATH
 export PATH=/usr/local/Cellar/node/8.9.1/bin:$PATH
 export PATH=/usr/local/Cellar/python/3.7.0/bin:$PATH
 export PATH=/opt/local/bin:$PATH
 export PATH=/usr/local/Cellar/graphviz/2.40.1/bin:$PATH
 export PATH=/usr/local/bin/:$PATH
-export PATH=/Users/navin.gv//bin/apache-maven-3.6.0/bin:$PATH
-export PATH=/Users/navin.gv//bin/dex2jar-2.0:$PATH
+export PATH=$HOME_DIR/bin/apache-maven-3.6.0/bin:$PATH
+export PATH=$HOME_DIR/bin/dex2jar-2.0:$PATH
 export NODE_OPTIONS=--max_old_space_size=10240
