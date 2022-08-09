@@ -6,4 +6,9 @@ alias brcgf='brc "gradle format -b build_gradle.gradle && gradle build -b build_
 
 
 alias gwb='./gradlew build'
+alias gwr='./gradlew run'
+alias gwf='./gradlew ktlintFormat'
+
+alias gw='gradle wrapper'
+
 alias gwrd='./gradlew assemble  --refresh-dependencies'

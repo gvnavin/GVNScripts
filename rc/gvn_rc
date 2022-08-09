@@ -9,4 +9,4 @@ alias sbpr='source ~/.bash_profile'
 alias sbrc='source ~/.bashrc'
 alias szrc='source ~/.zshrc'
 
-alias notifyDone='terminal-notifier -title "Terminal" -message "Done with task! Exit status: $?"' -activate com.apple.Terminal
+#alias notifyDone='terminal-notifier -title "Terminal" -message "Done with task! Exit status: $?"' -activate com.apple.Terminal
