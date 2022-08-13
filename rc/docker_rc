@@ -1,6 +1,8 @@
 alias dcu='sudo docker-compose up'
 alias dcud='sudo docker-compose up -d'
 alias dcd='sudo docker-compose down'
+alias dcdv='docker-compose down -v'
+
 alias ds='sudo systemctl start docker'
 
 
@@ -11,3 +13,4 @@ alias drdy='sudo docker run -p 8000:8000 amazon/dynamodb-local'
 
 alias dcls='sudo docker container ls'
 alias dcst='sudo docker container stop'
+
