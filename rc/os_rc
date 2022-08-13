@@ -1,0 +1,1 @@
+alias osl='cd /home/gvnavin/opensearch && sudo docker-compose up'

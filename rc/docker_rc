@@ -1,0 +1,10 @@
+alias dcu='sudo docker-compose up'
+alias dcud='sudo docker-compose up -d'
+alias dcd='sudo docker-compose down'
+alias ds='sudo systemctl start docker'
+
+
+#one time
+#docker pull amazon/dynamodb-local
+
+alias drdy='docker run -p 8000:8000 amazon/dynamodb-local'

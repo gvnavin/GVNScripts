@@ -16,6 +16,8 @@ source $GVN_SCRIPTS_PATH/rc/proj_rc
 source $GVN_SCRIPTS_PATH/rc/scp_to_from_host
 source $GVN_SCRIPTS_PATH/rc/ssh_to_host
 source $GVN_SCRIPTS_PATH/rc/py_rc
+source $GVN_SCRIPTS_PATH/rc/docker_rc
+source $GVN_SCRIPTS_PATH/rc/os_rc
 
 
 source $GVN_SCRIPTS_PATH/constants_variables

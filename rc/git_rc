@@ -34,6 +34,11 @@ alias agplr='/apollo/env/SDETools/bin/git pull --rebase'
 
 
 alias grh='git reset HEAD~1'
+
+function grhn {
+	git reset HEAD~$1
+}
+
 alias grhH='git reset --hard HEAD'
 
 alias gcfdx='git clean -fdx'
