@@ -1,0 +1,3 @@
+function dyl {}
+    sudo docker run -p 8000:8000 amazon/dynamodb-local && ./home/gvnavin/NoSqlWb.AppImage
+}
