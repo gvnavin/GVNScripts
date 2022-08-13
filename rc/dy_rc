@@ -1,3 +1,11 @@
 function dyl {
     sudo docker run -d -p 8000:8000 amazon/dynamodb-local ; /home/gvnavin/NoSqlWb.AppImage
 }
+
+function dyadp {
+    DYNAMO_ENDPOINT=http://localhost:$1 dynamodb-admin
+}
+
+function dyad {
+    DYNAMO_ENDPOINT=http://localhost:8000 dynamodb-admin
+}
