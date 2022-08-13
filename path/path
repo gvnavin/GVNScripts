@@ -1,6 +1,6 @@
 
 #for ubuntu
-export HOME_DIR=/home/navin/
+export HOME_DIR=/home/gvnavin/
 
 #for mac
 #export HOME_DIR=$HOME_DIR/
