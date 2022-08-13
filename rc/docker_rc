@@ -8,3 +8,6 @@ alias ds='sudo systemctl start docker'
 #docker pull amazon/dynamodb-local
 
 alias drdy='sudo docker run -p 8000:8000 amazon/dynamodb-local'
+
+alias dcls='sudo docker container ls'
+alias dcst='sudo docker container stop'
