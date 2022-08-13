@@ -38,4 +38,7 @@ export PATH=/usr/local/Cellar/graphviz/2.40.1/bin:$PATH
 export PATH=/usr/local/bin/:$PATH
 export PATH=$HOME_DIR/bin/apache-maven-3.6.0/bin:$PATH
 export PATH=$HOME_DIR/bin/dex2jar-2.0:$PATH
+export PATH=$HOME_DIR/.local/bin:$PATH
+
+
 export NODE_OPTIONS=--max_old_space_size=10240
