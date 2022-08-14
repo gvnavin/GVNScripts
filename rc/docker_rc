@@ -25,4 +25,4 @@ alias dcp='sudo docker container prune'
 #docker image prune -a
 
 
-lstk='sudo docker run --rm -it -p 4566:4566 -p 4510-4559:4510-4559 localstack/localstack'
+alias lstk='sudo docker run --rm -it -p 4566:4566 -p 4510-4559:4510-4559 localstack/localstack'
