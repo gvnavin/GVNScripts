@@ -145,3 +145,6 @@ function gacp {
 	gcmt;
 	gph
 }
+
+
+gmag='git merge ag --allow-unrelated-histories'
