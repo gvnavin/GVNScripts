@@ -11,4 +11,11 @@ alias gwf='./gradlew ktlintFormat'
 
 alias gw='gradle wrapper'
 
-alias gwrd='./gradlew assemble  --refresh-dependencies'
+alias gwrd='./gradlew assemble --refresh-dependencies'
+
+
+alias gwal='for d in ./*/ ; do (cd "$d" && pwd && gradle wrapper);done'
+alias gwbal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew build);done'
+alias gwral='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew run);done'
+alias gwfal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew ktlintFormat);done'
+alias gwrdal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew assemble --refresh-dependencies);done'

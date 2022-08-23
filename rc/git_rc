@@ -148,10 +148,10 @@ function gacpt {
 
 function gacp {
 	ga.;
-	gcm $1;
+	gcm "$1";
 	gph
 }
 
 alias gmag='git merge origin/ag --allow-unrelated-histories'
 
-alias gplal='for d in ./*/ ; do (cd "$d" && pwd && git pull --rebase);done'
+alias gplrall='for d in ./*/ ; do (cd "$d" && pwd && git pull --rebase);done'
