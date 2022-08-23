@@ -155,3 +155,12 @@ function gacp {
 alias gmag='git merge origin/ag --allow-unrelated-histories'
 
 alias gplrall='for d in ./*/ ; do (cd "$d" && pwd && git pull --rebase);done'
+
+alias gcal='for d in ./*/ ; do (cd "$d" && pwd && git commit);done'
+
+alias gstal='for d in ./*/ ; do (cd "$d" && pwd && git status);done'
+
+alias gacmal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit -m "temp commit" );done'
+
+alias gpha='for d in ./*/ ; do (cd "$d" && pwd && git push);done'
+
