@@ -140,12 +140,17 @@ alias gshp='git stash pop'
 
 alias grv='git remote -v'
 
-function gacp {
+function gacpt {
 	ga.;
 	gcmt;
 	gph
 }
 
+function gacp {
+	ga.;
+	gcm $1;
+	gph
+}
 
 alias gmag='git merge ag --allow-unrelated-histories'
 
