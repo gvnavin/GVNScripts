@@ -152,6 +152,6 @@ function gacp {
 	gph
 }
 
-alias gmag='git merge ag --allow-unrelated-histories'
+alias gmag='git merge origin/ag --allow-unrelated-histories'
 
 alias gplal='for d in ./*/ ; do (cd "$d" && pwd && git pull --rebase);done'
