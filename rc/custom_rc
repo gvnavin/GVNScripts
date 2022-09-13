@@ -4,3 +4,10 @@ function jarsize {
     ls -lh UserService/lambda/build/artifacts/lambda-0.0.1.jar
     ls -lh ClientService/lambda/build/artifacts/lambda-0.0.1.jar
 }
+
+function deletejar {
+	rm -rf ApplicationService/lambda/build/artifacts/lambda-0.0.1.jar
+    rm -rf JobProfileService/lambda/build/artifacts/lambda-0.0.1.jar
+    rm -rf UserService/lambda/build/artifacts/lambda-0.0.1.jar
+    rm -rf ClientService/lambda/build/artifacts/lambda-0.0.1.jar
+}
