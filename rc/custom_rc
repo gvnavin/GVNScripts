@@ -1,0 +1,6 @@
+function jarsize {
+	ls -lh ApplicationService/lambda/build/artifacts/lambda-0.0.1.jar
+    ls -lh JobProfileService/lambda/build/artifacts/lambda-0.0.1.jar
+    ls -lh UserService/lambda/build/artifacts/lambda-0.0.1.jar
+    ls -lh ClientService/lambda/build/artifacts/lambda-0.0.1.jar
+}
