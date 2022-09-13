@@ -4,8 +4,8 @@ alias gf='gradle format -b build_gradle.gradle && gradle build -b build_gradle.g
 
 alias brcgf='brc "gradle format -b build_gradle.gradle && gradle build -b build_gradle.gradle && gradle install -b build_gradle.gradle"'
 
-
-alias gwb='./gradlew ktlintFormat && ./gradlew build'
+alias gwb='./gradlew build'
+alias gwfb='./gradlew ktlintFormat && ./gradlew build'
 alias gwr='./gradlew run'
 alias gwf='./gradlew ktlintFormat'
 
