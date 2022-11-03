@@ -168,6 +168,6 @@ alias gacmal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit );do
 
 alias gphal='for d in ./*/ ; do (cd "$d" && pwd && git push);done'
 
-alias gsthal='for d in ./*/ ; do (cd "$d" && pwd && git stash;done'
+alias gsthal='for d in ./*/ ; do (cd "$d" && pwd && git stash);done'
 
-alias gsthpal='for d in ./*/ ; do (cd "$d" && pwd && git stash pop;done'
+alias gsthpal='for d in ./*/ ; do (cd "$d" && pwd && git stash pop);done'
