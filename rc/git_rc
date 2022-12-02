@@ -185,3 +185,10 @@ function m2pp {
 	git merge --ff-only release/beta
 	git push
 }
+
+function m2p {
+	gco release/prod
+	git pull --rebase
+	git merge --ff-only release/pre-prod
+	git push
+}
