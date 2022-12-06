@@ -172,6 +172,16 @@ alias gsthal='for d in ./*/ ; do (cd "$d" && pwd && git stash);done'
 
 alias gsthpal='for d in ./*/ ; do (cd "$d" && pwd && git stash pop);done'
 
+function m2b {
+	gco master
+	git pull --rebase
+	npm run init
+	gco release/beta
+	git pull --rebase
+	git merge --ff-only master
+	git push
+}
+
 function m2pp {
 	gco master
 	git pull --rebase
