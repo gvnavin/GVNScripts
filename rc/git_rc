@@ -201,4 +201,28 @@ function m2p {
 	git pull --rebase
 	git merge --ff-only release/pre-prod
 	git push
+	gcomt
+}
+
+
+function m2dp {
+	gco master
+	git pull --rebase
+	npm run init
+	gco release/beta
+	git pull --rebase
+	git merge --ff-only master
+	git push
+
+	gco release/pre-prod
+	git pull --rebase
+	git merge --ff-only release/beta
+	git push
+
+	gco release/prod
+	git pull --rebase
+	git merge --ff-only release/pre-prod
+	git push
+	
+	gcomt
 }
