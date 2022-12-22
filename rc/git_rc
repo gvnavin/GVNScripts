@@ -179,7 +179,7 @@ function m2pp {
 	npm run init
 	gco release/pre-prod
 	git pull --rebase
-	git merge --ff-only release/beta
+	git merge --ff-only master
 	git push
 }
 
@@ -199,7 +199,7 @@ function m2dp {
 
 	gco release/pre-prod
 	git pull --rebase
-	git merge --ff-only release/beta
+	git merge --ff-only master
 	git push
 
 	gco release/prod
