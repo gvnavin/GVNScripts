@@ -172,6 +172,8 @@ alias gsthal='for d in ./*/ ; do (cd "$d" && pwd && git stash);done'
 
 alias gsthpal='for d in ./*/ ; do (cd "$d" && pwd && git stash pop);done'
 
+alias grhHal='for d in ./*/ ; do (cd "$d" && pwd && git reset --hard HEAD);done'
+
 
 function m2pp {
 	gco master
