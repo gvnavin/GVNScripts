@@ -10,3 +10,6 @@ alias sbrc='source ~/.bashrc'
 alias szrc='source ~/.zshrc'
 
 #alias notifyDone='terminal-notifier -title "Terminal" -message "Done with task! Exit status: $?"' -activate com.apple.Terminal
+
+
+export cdkdhs='cdk deploy --hotswap'
