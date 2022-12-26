@@ -4,10 +4,11 @@ alias gf='gradle format -b build_gradle.gradle && gradle build -b build_gradle.g
 
 alias brcgf='brc "gradle format -b build_gradle.gradle && gradle build -b build_gradle.gradle && gradle install -b build_gradle.gradle"'
 
-alias gwb='./gradlew build'
 alias gwfb='./gradlew ktlintFormat && ./gradlew build'
+alias gwb='./gradlew build'
 alias gwr='./gradlew run'
 alias gwf='./gradlew ktlintFormat'
+alias gwp='./gradlew publish'
 
 alias gw='gradle wrapper'
 
@@ -19,3 +20,5 @@ alias gwbal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew ktlintFormat && ./g
 alias gwral='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew run);done'
 alias gwfal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew ktlintFormat);done'
 alias gwrdal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew assemble --refresh-dependencies);done'
+
+alias gwpal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew publish);done'
