@@ -121,12 +121,14 @@ git config --global core.editor "subl -w"
 function gacmt {
 	ga.; 
 	gcmt;
+	spd-say done
 }
 
 function gacmtr {
 	ga.; 
 	gcmt;
 	git rebase -i HEAD~$1;
+	spd-say done
 }
 
 alias gii='gi osx > .gitignore; gi java >> .gitignore; gi intellij >> .gitignore'
@@ -134,45 +136,47 @@ alias gii='gi osx > .gitignore; gi java >> .gitignore; gi intellij >> .gitignore
 ################################################################
 
 
-alias gsth='git stash'
-alias gstha='git stash apply'
-alias gsthp='git stash pop'
+alias gsth='git stash && spd-say done'
+alias gstha='git stash apply && spd-say done'
+alias gsthp='git stash pop && spd-say done'
 
-alias grv='git remote -v'
+alias grv='git remote -v && spd-say done'
 
 function gacpt {
 	ga.;
 	gcmt;
 	gph
+	spd-say done
 }
 
 function gacp {
 	ga.;
 	gcm "$1";
 	gph
+	spd-say done
 }
 
-alias gmag='git merge origin/ag --allow-unrelated-histories'
+alias gmag='git merge origin/ag --allow-unrelated-histories && spd-say done'
 
-alias gmagal='for d in ./*/ ; do (cd "$d" && pwd && git merge origin/ag --allow-unrelated-histories);done'
+alias gmagal='for d in ./*/ ; do (cd "$d" && pwd && git merge origin/ag --allow-unrelated-histories);done && spd-say done'
 
-alias gplral='for d in ./*/ ; do (cd "$d" && pwd && git pull --rebase);done'
+alias gplral='for d in ./*/ ; do (cd "$d" && pwd && git pull --rebase);done && spd-say done'
 
-alias gcal='for d in ./*/ ; do (cd "$d" && pwd && git commit);done'
+alias gcal='for d in ./*/ ; do (cd "$d" && pwd && git commit);done && spd-say done'
 
-alias gstal='for d in ./*/ ; do (cd "$d" && pwd && git status);done'
+alias gstal='for d in ./*/ ; do (cd "$d" && pwd && git status);done && spd-say done'
 
-alias gacmtal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit -m "temp commit" );done'
+alias gacmtal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit -m "temp commit" );done && spd-say done'
 
-alias gacmal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit );done'
+alias gacmal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit );done && spd-say done'
 
-alias gphal='for d in ./*/ ; do (cd "$d" && pwd && git push);done'
+alias gphal='for d in ./*/ ; do (cd "$d" && pwd && git push);done && spd-say done'
 
-alias gsthal='for d in ./*/ ; do (cd "$d" && pwd && git stash);done'
+alias gsthal='for d in ./*/ ; do (cd "$d" && pwd && git stash);done && spd-say done'
 
-alias gsthpal='for d in ./*/ ; do (cd "$d" && pwd && git stash pop);done'
+alias gsthpal='for d in ./*/ ; do (cd "$d" && pwd && git stash pop);done && spd-say done'
 
-alias grhHal='for d in ./*/ ; do (cd "$d" && pwd && git reset --hard HEAD);done'
+alias grhHal='for d in ./*/ ; do (cd "$d" && pwd && git reset --hard HEAD);done && spd-say done'
 
 
 function m2pp {
@@ -183,6 +187,7 @@ function m2pp {
 	git pull --rebase
 	git merge --ff-only master
 	git push
+	spd-say done
 }
 
 function m2p {
@@ -191,6 +196,9 @@ function m2p {
 	git merge --ff-only release/pre-prod
 	git push
 	gcomt
+
+	spd-say done
+
 }
 
 
@@ -210,4 +218,7 @@ function m2dp {
 	git push
 	
 	gcomt
+	
+	spd-say done
+
 }
