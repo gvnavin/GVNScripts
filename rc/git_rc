@@ -136,11 +136,11 @@ alias gii='gi osx > .gitignore; gi java >> .gitignore; gi intellij >> .gitignore
 ################################################################
 
 
-alias gsth='git stash && spd-say done'
-alias gstha='git stash apply && spd-say done'
-alias gsthp='git stash pop && spd-say done'
+alias gsth='git stash; spd-say done'
+alias gstha='git stash apply; spd-say done'
+alias gsthp='git stash pop; spd-say done'
 
-alias grv='git remote -v && spd-say done'
+alias grv='git remote -v; spd-say done'
 
 function gacpt {
 	ga.;
@@ -156,27 +156,27 @@ function gacp {
 	spd-say done
 }
 
-alias gmag='git merge origin/ag --allow-unrelated-histories && spd-say done'
+alias gmag='git merge origin/ag --allow-unrelated-histories; spd-say done'
 
-alias gmagal='for d in ./*/ ; do (cd "$d" && pwd && git merge origin/ag --allow-unrelated-histories);done && spd-say done'
+alias gmagal='for d in ./*/ ; do (cd "$d" && pwd && git merge origin/ag --allow-unrelated-histories);done; spd-say done'
 
-alias gplral='for d in ./*/ ; do (cd "$d" && pwd && git pull --rebase);done && spd-say done'
+alias gplral='for d in ./*/ ; do (cd "$d" && pwd && git pull --rebase);done; spd-say done'
 
-alias gcal='for d in ./*/ ; do (cd "$d" && pwd && git commit);done && spd-say done'
+alias gcal='for d in ./*/ ; do (cd "$d" && pwd && git commit);done; spd-say done'
 
-alias gstal='for d in ./*/ ; do (cd "$d" && pwd && git status);done && spd-say done'
+alias gstal='for d in ./*/ ; do (cd "$d" && pwd && git status);done; spd-say done'
 
-alias gacmtal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit -m "temp commit" );done && spd-say done'
+alias gacmtal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit -m "temp commit" );done; spd-say done'
 
-alias gacmal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit );done && spd-say done'
+alias gacmal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit );done; spd-say done'
 
-alias gphal='for d in ./*/ ; do (cd "$d" && pwd && git push);done && spd-say done'
+alias gphal='for d in ./*/ ; do (cd "$d" && pwd && git push);done; spd-say done'
 
-alias gsthal='for d in ./*/ ; do (cd "$d" && pwd && git stash);done && spd-say done'
+alias gsthal='for d in ./*/ ; do (cd "$d" && pwd && git stash);done; spd-say done'
 
-alias gsthpal='for d in ./*/ ; do (cd "$d" && pwd && git stash pop);done && spd-say done'
+alias gsthpal='for d in ./*/ ; do (cd "$d" && pwd && git stash pop);done; spd-say done'
 
-alias grhHal='for d in ./*/ ; do (cd "$d" && pwd && git reset --hard HEAD);done && spd-say done'
+alias grhHal='for d in ./*/ ; do (cd "$d" && pwd && git reset --hard HEAD);done; spd-say done'
 
 
 function m2pp {

@@ -1,24 +1,24 @@
-alias gfbi='gradle format && gradle build && gradle install && spd-say done'
+alias gfbi='gradle format && gradle build && gradle install; spd-say done'
 
-alias gf='gradle format -b build_gradle.gradle && gradle build -b build_gradle.gradle && gradle install -b build_gradle.gradle && spd-say done'
+alias gf='gradle format -b build_gradle.gradle && gradle build -b build_gradle.gradle && gradle install -b build_gradle.gradle; spd-say done'
 
-alias brcgf='brc "gradle format -b build_gradle.gradle && gradle build -b build_gradle.gradle && gradle install -b build_gradle.gradle" && spd-say done'
+alias brcgf='brc "gradle format -b build_gradle.gradle && gradle build -b build_gradle.gradle && gradle install -b build_gradle.gradle"; spd-say done'
 
-alias gwfb='./gradlew ktlintFormat && ./gradlew build && spd-say done'
-alias gwb='./gradlew build && spd-say done'
-alias gwr='./gradlew run && spd-say done'
-alias gwf='./gradlew ktlintFormat && spd-say done'
-alias gwp='./gradlew publish && spd-say done'
+alias gwfb='./gradlew ktlintFormat && ./gradlew build; spd-say done'
+alias gwb='./gradlew build; spd-say done'
+alias gwr='./gradlew run; spd-say done'
+alias gwf='./gradlew ktlintFormat; spd-say done'
+alias gwp='./gradlew publish; spd-say done'
 
-alias gw='gradle wrapper && spd-say done'
+alias gw='gradle wrapper; spd-say done'
 
-alias gwrd='./gradlew assemble --refresh-dependencies && spd-say done'
+alias gwrd='./gradlew assemble --refresh-dependencies; spd-say done'
 
 
-alias gwal='for d in ./*/ ; do (cd "$d" && pwd && gradle wrapper);done && spd-say done'
-alias gwbal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew ktlintFormat && ./gradlew build);done  && spd-say done'
-alias gwral='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew run);done  && spd-say done'
-alias gwfal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew ktlintFormat);done  && spd-say done'
-alias gwrdal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew assemble --refresh-dependencies);done  && spd-say done'
+alias gwal='for d in ./*/ ; do (cd "$d" && pwd && gradle wrapper);done; spd-say done'
+alias gwbal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew ktlintFormat && ./gradlew build);done ; spd-say done'
+alias gwral='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew run);done ; spd-say done'
+alias gwfal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew ktlintFormat);done ; spd-say done'
+alias gwrdal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew assemble --refresh-dependencies);done ; spd-say done'
 
-alias gwpal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew publish);done  && spd-say done'
+alias gwpal='for d in ./*/ ; do (cd "$d" && pwd && ./gradlew publish);done ; spd-say done'
