@@ -150,6 +150,7 @@ function gacpt {
 }
 
 function gacp {
+	gwfb
 	ga.;
 	gcm "$1";
 	gph
