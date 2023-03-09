@@ -154,7 +154,7 @@ function gacp {
 	ga.;
 	gcm "$1";
 	gph
-	spd-say done
+	spd-say "gacp done"
 }
 
 alias gmag='git merge origin/ag --allow-unrelated-histories; spd-say done'
