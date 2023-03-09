@@ -150,7 +150,7 @@ function gacpt {
 }
 
 function gacp {
-	./gradlew ktlintFormat && spd-say "ktlintFormat done" && ./gradlew build; spd-say "build done"
+	./gradlew ktlintFormat ; spd-say "ktlintFormat done" && ./gradlew build; spd-say "build done"
 	ga.;
 	gcm "$1";
 	gph
