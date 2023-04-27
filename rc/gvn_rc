@@ -16,5 +16,5 @@ export cdkdhs='cdk deploy --hotswap'
 
 
 function nvr {
-    npm run init && npm run build && npm run lerna:version && npm run release && spd-say "done"
+    npm run init && npm run build && npm run lerna:version && npm run release && spd-say "nvr done"
 }
