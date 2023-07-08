@@ -157,6 +157,14 @@ function gacp {
 	spd-say "gacp done"
 }
 
+function gacpf {
+	./gradlew ktlintFormat ; spd-say "ktlintFormat done" && ./gradlew build; spd-say "build done"
+	ga.;
+	gcm "fix formatting";
+	gph
+	spd-say "gacp done"
+}
+
 alias gmag='git merge origin/ag --allow-unrelated-histories; spd-say done'
 
 alias gmagal='for d in ./*/ ; do (cd "$d" && pwd && git merge origin/ag --allow-unrelated-histories);done; spd-say done'
