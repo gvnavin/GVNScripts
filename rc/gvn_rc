@@ -13,10 +13,3 @@ alias szrc='source ~/.zshrc'
 
 
 export cdkdhs='cdk deploy --hotswap'
-
-
-function nvr {
-    npm run init && npm run build && npm run lerna:version && npm run release && spd-say "nvr done"
-}
-
-alias nud='npm run upgrade_deps'
