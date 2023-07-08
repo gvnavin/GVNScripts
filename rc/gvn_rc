@@ -13,3 +13,7 @@ alias szrc='source ~/.zshrc'
 
 
 export cdkdhs='cdk deploy --hotswap'
+
+function agwp {
+    arti && gwp
+}
