@@ -7,6 +7,7 @@ alias ni='npm run init'
 alias nb='npm run build'
 alias nr='npm run release'
 alias ns='npm run start'
+alias nf='npm run format'
 
 alias nsb='NODE_OPTIONS=--openssl-legacy-provider npm run storybook'
 
