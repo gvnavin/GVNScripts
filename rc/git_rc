@@ -146,7 +146,7 @@ function gacpt {
 	ga.;
 	gcmt;
 	gph
-	spd-say done
+	spd-say "gacpt done"
 }
 
 function gacp {
@@ -158,11 +158,20 @@ function gacp {
 }
 
 function gacpf {
-	./gradlew ktlintFormat ; spd-say "ktlintFormat done" && ./gradlew build; spd-say "build done"
+	./gradlew ktlintFormat ; 
+	spd-say "ktlintFormat done" && ./gradlew build; 
+	spd-say "build done"
 	ga.;
 	gcm "fix formatting";
 	gph
-	spd-say "gacp done"
+	spd-say "gacpf done"
+}
+
+function gacpl {
+	ga.;
+	gcm "package lock updates";
+	gph
+	spd-say "gacpl done"
 }
 
 alias gmag='git merge origin/ag --allow-unrelated-histories; spd-say done'
