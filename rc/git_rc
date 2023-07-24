@@ -209,6 +209,10 @@ function m2pp {
 }
 
 function m2p {
+	
+	gco release/pre-prod
+	git pull --rebase
+
 	gco release/prod
 	git pull --rebase
 	git merge --ff-only release/pre-prod
