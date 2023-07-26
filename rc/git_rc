@@ -197,6 +197,15 @@ alias gsthpal='for d in ./*/ ; do (cd "$d" && pwd && git stash pop);done; spd-sa
 alias grhHal='for d in ./*/ ; do (cd "$d" && pwd && git reset --hard HEAD);done; spd-say done'
 
 
+function gplr3 {
+	gco master
+	git pull --rebase
+	gco release/pre-prod
+	git pull --rebase
+	gco release/prod
+	git pull --rebase
+}
+
 function m2pp {
 	gco master
 	git pull --rebase
