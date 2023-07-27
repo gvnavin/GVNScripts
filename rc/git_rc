@@ -209,7 +209,9 @@ function gplr3 {
 function m2pp {
 	gco master
 	git pull --rebase
-	npm run init
+	nud
+	#npm run init
+	gacpl
 	gco release/pre-prod
 	git pull --rebase
 	git merge --ff-only master
@@ -236,8 +238,10 @@ function m2p {
 function m2dp {
 	gco master
 	git pull --rebase
-	npm run init
-
+	nud
+	#npm run init
+	gacpl
+	
 	gco release/pre-prod
 	git pull --rebase
 	git merge --ff-only master
