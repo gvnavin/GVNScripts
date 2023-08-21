@@ -204,6 +204,7 @@ function gplr3 {
 	git pull --rebase
 	gco release/prod
 	git pull --rebase
+	gcomt
 }
 
 function m2pp {
@@ -216,6 +217,7 @@ function m2pp {
 	git pull --rebase
 	git merge --ff-only master
 	git push
+	gcomt
 	spd-say done
 }
 
