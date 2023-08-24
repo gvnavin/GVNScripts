@@ -208,10 +208,13 @@ function gplr3 {
 }
 
 function m2pp {
+	
+	ni
+	nb
+	
 	gco master
 	git pull --rebase
 	nud
-	#npm run init
 	gacpl
 	gco release/pre-prod
 	git pull --rebase
@@ -238,10 +241,14 @@ function m2p {
 
 
 function m2dp {
+
+	ni
+	nb
+
 	gco master
 	git pull --rebase
 	nud
-	#npm run init
+
 	gacpl
 	
 	gco release/pre-prod
