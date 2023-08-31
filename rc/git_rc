@@ -209,9 +209,9 @@ function gplr3 {
 
 function m2pp {
 	
-	ni
-	nb
-	
+	npm run init
+	npm run build
+
 	gco master
 	git pull --rebase
 	nud
@@ -242,8 +242,8 @@ function m2p {
 
 function m2dp {
 
-	ni
-	nb
+	npm run init
+	npm run build
 
 	gco master
 	git pull --rebase
