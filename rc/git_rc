@@ -209,13 +209,16 @@ function gplr3 {
 
 function m2pp {
 	
+	gco master
+	git pull --rebase
+
 	npm run init
 	npm run build
 
-	gco master
-	git pull --rebase
-	nud
-	gacpl
+	git add .;
+    git commit -m "package lock updates";
+	git push
+
 	gco release/pre-prod
 	git pull --rebase
 	git merge --ff-only master
@@ -242,14 +245,15 @@ function m2p {
 
 function m2dp {
 
+	gco master
+	git pull --rebase
+
 	npm run init
 	npm run build
 
-	gco master
-	git pull --rebase
-	nud
-
-	gacpl
+	git add .;
+    git commit -m "package lock updates";
+	git push
 	
 	gco release/pre-prod
 	git pull --rebase
