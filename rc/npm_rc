@@ -1,5 +1,5 @@
 function nvr {
-    npm run init && npm run build && npm run lerna:version && npm run release && spd-say "nvr done"
+    npm run init && npm run build && npm run lerna:version && npm run release && say "nvr done"
 }
 
 

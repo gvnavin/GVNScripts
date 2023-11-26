@@ -121,14 +121,14 @@ git config --global core.editor "subl -w"
 function gacmt {
 	ga.; 
 	gcmt;
-	spd-say done
+	say done
 }
 
 function gacmtr {
 	ga.; 
 	gcmt;
 	git rebase -i HEAD~$1;
-	spd-say done
+	say done
 }
 
 alias gii='gi osx > .gitignore; gi java >> .gitignore; gi intellij >> .gitignore'
@@ -136,65 +136,65 @@ alias gii='gi osx > .gitignore; gi java >> .gitignore; gi intellij >> .gitignore
 ################################################################
 
 
-alias gsth='git stash; spd-say done'
-alias gstha='git stash apply; spd-say done'
-alias gsthp='git stash pop; spd-say done'
+alias gsth='git stash; say done'
+alias gstha='git stash apply; say done'
+alias gsthp='git stash pop; say done'
 
-alias grv='git remote -v; spd-say done'
+alias grv='git remote -v; say done'
 
 function gacpt {
 	ga.;
 	gcmt;
 	gph
-	spd-say "gacpt done"
+	say "gacpt done"
 }
 
 function gacp {
-	./gradlew ktlintFormat ; spd-say "ktlintFormat done" && ./gradlew build; spd-say "build done"
+	./gradlew ktlintFormat ; say "ktlintFormat done" && ./gradlew build; say "build done"
 	ga.;
 	gcm "$1";
 	gph
-	spd-say "gacp done"
+	say "gacp done"
 }
 
 function gacpf {
 	./gradlew ktlintFormat ; 
-	spd-say "ktlintFormat done" && ./gradlew build; 
-	spd-say "build done"
+	say "ktlintFormat done" && ./gradlew build; 
+	say "build done"
 	ga.;
 	gcm "fix formatting";
 	gph
-	spd-say "gacpf done"
+	say "gacpf done"
 }
 
 function gacpl {
 	ga.;
 	gcm "package lock updates";
 	gph
-	spd-say "gacpl done"
+	say "gacpl done"
 }
 
-alias gmag='git merge origin/ag --allow-unrelated-histories; spd-say done'
+alias gmag='git merge origin/ag --allow-unrelated-histories; say done'
 
-alias gmagal='for d in ./*/ ; do (cd "$d" && pwd && git merge origin/ag --allow-unrelated-histories);done; spd-say done'
+alias gmagal='for d in ./*/ ; do (cd "$d" && pwd && git merge origin/ag --allow-unrelated-histories);done; say done'
 
-alias gplral='for d in ./*/ ; do (cd "$d" && pwd && git pull --rebase);done; spd-say done'
+alias gplral='for d in ./*/ ; do (cd "$d" && pwd && git pull --rebase);done; say done'
 
-alias gcal='for d in ./*/ ; do (cd "$d" && pwd && git commit);done; spd-say done'
+alias gcal='for d in ./*/ ; do (cd "$d" && pwd && git commit);done; say done'
 
-alias gstal='for d in ./*/ ; do (cd "$d" && pwd && git status);done; spd-say done'
+alias gstal='for d in ./*/ ; do (cd "$d" && pwd && git status);done; say done'
 
-alias gacmtal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit -m "temp commit" );done; spd-say done'
+alias gacmtal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit -m "temp commit" );done; say done'
 
-alias gacmal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit );done; spd-say done'
+alias gacmal='for d in ./*/ ; do (cd "$d" && pwd && git add . && git commit );done; say done'
 
-alias gphal='for d in ./*/ ; do (cd "$d" && pwd && git push);done; spd-say done'
+alias gphal='for d in ./*/ ; do (cd "$d" && pwd && git push);done; say done'
 
-alias gsthal='for d in ./*/ ; do (cd "$d" && pwd && git stash);done; spd-say done'
+alias gsthal='for d in ./*/ ; do (cd "$d" && pwd && git stash);done; say done'
 
-alias gsthpal='for d in ./*/ ; do (cd "$d" && pwd && git stash pop);done; spd-say done'
+alias gsthpal='for d in ./*/ ; do (cd "$d" && pwd && git stash pop);done; say done'
 
-alias grhHal='for d in ./*/ ; do (cd "$d" && pwd && git reset --hard HEAD);done; spd-say done'
+alias grhHal='for d in ./*/ ; do (cd "$d" && pwd && git reset --hard HEAD);done; say done'
 
 
 function gplr3 {
@@ -224,7 +224,7 @@ function m2pp {
 	git merge --ff-only master
 	git push
 	gcomt
-	spd-say done
+	say done
 }
 
 function m2p {
@@ -238,7 +238,7 @@ function m2p {
 	git push
 	gcomt
 
-	spd-say done
+	say done
 
 }
 
@@ -267,6 +267,6 @@ function m2dp {
 	
 	gcomt
 	
-	spd-say done
+	say done
 
 }

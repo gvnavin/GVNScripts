@@ -1,9 +1,9 @@
 
 #for ubuntu
-export HOME_DIR=/home/gvnavin/
+# export HOME_DIR=/home/gvnavin/
 
 #for mac
-#export HOME_DIR=$HOME_DIR/
+export HOME_DIR=/Users/gnavin/
 
 export PATH=$HOME_DIR/.nvm/versions/node/v17.3.0/bin:$HOME_DIR/.poetry/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Java/JavaVirtualMachines/jdk-18.jdk/Contents/Home/bin:$HOME_DIR/tools/apache-maven-3.8.5/bin
 

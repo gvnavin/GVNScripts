@@ -19,7 +19,6 @@ source $GVN_SCRIPTS_PATH/rc/py_rc
 source $GVN_SCRIPTS_PATH/rc/docker_rc
 source $GVN_SCRIPTS_PATH/rc/os_rc
 source $GVN_SCRIPTS_PATH/rc/dy_rc
-source $GVN_SCRIPTS_PATH/rc/custom_rc
 source $GVN_SCRIPTS_PATH/rc/npm_rc
 
 
